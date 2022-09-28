@@ -1,10 +1,10 @@
 #!name=快捷搜索
-#!desc=最后更新时间 2022-09-26 11:58:22
+#!desc=最后更新时间 2022-09-26 11:59:22
 #!system=ios
 
 # Safari 内输入 命令 + 空格 + 关键词 快速指定搜索引擎搜索
 # 注：先进入设置更改 Safari 默认搜索为 DuckDuckGO
-# 可自行修改指令或者添加搜索引擎asdasd
+# 可自行修改指令或者添加搜索引擎
 
 # 分割线——————————————————————————
 
@@ -36,6 +36,7 @@
 # tb: 淘宝
 # tm: 天猫
 
+#cbh 茶杯狐
 # ac: Acfun
 # bli: 哔哩哔哩
 # ytb: YouTube
@@ -114,6 +115,9 @@
 ^https:\/\/duckduckgo.com\/\?q=tm\+([^&]+).+ https://s.m.tmall.com/m/search.htm?q=$1 302
 
 # > 视频资源
+
+#cbh 茶杯狐
+^https:\/\/duckduckgo.com\/\?q=cbh\+([^&]+).+https://cupfox.app/search?key=$1 302
 # ac (Acfun)
 ^https:\/\/duckduckgo.com\/\?q=ac\+([^&]+).+ https://www.acfun.cn/search?keyword==$1 302
 # bli (哔哩哔哩) 
