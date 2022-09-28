@@ -137,7 +137,7 @@
 # bd: 百度
 ^https:\/\/duckduckgo.com\/\?q=bd\+([^&]+).+ https://www.baidu.com/s?wd=$1 302
 # bdd:动画百度
-^https:\/\/duckduckgo.com\/\?q=bd\+([^&]+).+ https://cnm.buhuibaidu.me/?s=$1 302
+^https:\/\/duckduckgo.com\/\?q=bdd\+([^&]+).+ https://cnm.buhuibaidu.me/?s=$1 302
 # ddg: DuckDuckGo 
 ^https:\/\/duckduckgo.com\/\?q=ddg\+([^&]+).+ https://duckduckgo.com/?ia=about&q=$1 302
 # 无指令: google
