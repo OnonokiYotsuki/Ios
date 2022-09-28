@@ -117,7 +117,7 @@
 # > 视频资源
 
 #cbh 茶杯狐
-^https:\/\/duckduckgo.com\/\?q=cbh\+([^&]+).+https://cupfox.app/search?key=$1 302
+^https:\/\/duckduckgo.com\/\?q=cbh\+([^&]+).+ https://cupfox.app/search?key=$1 302
 # ac (Acfun)
 ^https:\/\/duckduckgo.com\/\?q=ac\+([^&]+).+ https://www.acfun.cn/search?keyword==$1 302
 # bli (哔哩哔哩) 
