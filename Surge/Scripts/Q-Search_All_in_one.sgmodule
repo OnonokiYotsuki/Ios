@@ -44,12 +44,22 @@
 # gd: Google Drive资源
 # tgd: TG搜索Google Drive资源
 
+# yh: xxx (油猴搜索)
 # bi: 必应搜索
 # bd: 百度搜索
-# bbd:帮百度
+# bbd: 帮百度
 # ec: Ecosia 搜索
 # ddg: DuckDuckGo 搜索
 # 无指令则转 google 搜索
+
+#>>>>>>>>>>>>>>>>>>>>>>>苹果商店切换
+# cn  (切换至中国区)
+# hk  (切换至香港区)
+# tw  (切换至台湾区)
+# us  (切换至美国区)
+# jp  (切换至日本区)
+# kr  (切换至韩国区)
+# tr  (切换至土耳其区)
 
 # 分割线——————————————————————————
 
@@ -134,6 +144,8 @@
 ^https:\/\/duckduckgo.com\/\?q=tga\+([^&]+).+ https://t.me/YunPanPan?q=$1 302
 
 # > 搜索引擎
+# yh  xxx (油猴搜索)
+^https:\/\/duckduckgo.com\/\?q=yh\+([^&]+).+ url 302 https://greasyfork.org/zh-CN/scripts?q=$1
 # ec: Ecosia
 ^https:\/\/duckduckgo.com\/\?q=ec\+([^&]+).+ https://www.ecosia.org/search?q=$1 302
 # bi: 必应
@@ -146,7 +158,23 @@
 ^https:\/\/duckduckgo.com\/\?q=ddg\+([^&]+).+ https://duckduckgo.com/?ia=about&q=$1 302
 # 无指令: google
 ^https:\/\/duckduckgo.com\/\?q=([^&]+).+ https://www.google.com/search?q=$1 302
-
+#>>>>>>>>>>>>>>>>>>>>>>>苹果商店切换
+#源链接爬虫于>>https://www.liangjianghu.com/searchads-appstore-switch
+#Created by ddgksf2013，使用方法：输入区号，搜索即可
+# cn  (切换至中国区)
+^https:\/\/duckduckgo.com\/\?q=cn&.+ url 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143465&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=cn&urlDesc=
+# hk  (切换至香港区)
+^https:\/\/duckduckgo.com\/\?q=hk&.+ url 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143463&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=hk&urlDesc=
+# tw  (切换至台湾区)
+^https:\/\/duckduckgo.com\/\?q=tw&.+ url 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143470&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=tw&urlDesc=
+# us  (切换至美国区)
+^https:\/\/duckduckgo.com\/\?q=us&.+ url 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143441&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=us&urlDesc=
+# jp  (切换至日本区)
+^https:\/\/duckduckgo.com\/\?q=jp&.+ url 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143462&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=jp&urlDesc=
+# kr  (切换至韩国区)
+^https:\/\/duckduckgo.com\/\?q=kr&.+ url 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143466&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=kr&urlDesc=
+# tr  (切换至土耳其区)
+^https:\/\/duckduckgo.com\/\?q=tr&.+ url 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143480&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=tr&urlDesc=
 # 分割线——————————————————————————
 
 [MITM]
