@@ -145,7 +145,7 @@
 
 # > 搜索引擎
 # yh  xxx (油猴搜索)
-^https:\/\/duckduckgo.com\/\?q=yh\+([^&]+).+ url 302 https://greasyfork.org/zh-CN/scripts?q=$1
+^https:\/\/duckduckgo.com\/\?q=yh\+([^&]+).+ ttps://greasyfork.org/zh-CN/scripts?q=$1 302
 # ec: Ecosia
 ^https:\/\/duckduckgo.com\/\?q=ec\+([^&]+).+ https://www.ecosia.org/search?q=$1 302
 # bi: 必应
