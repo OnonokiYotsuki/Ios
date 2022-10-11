@@ -52,7 +52,8 @@
 # ddg: DuckDuckGo 搜索
 # 无指令则转 google 搜索
 
-#>>>>>>>>>>>>>>>>>>>>>>>苹果商店切换
+#>>>>>>>>>>>>>>>>>>>>>>>苹果商店
+# ios  xxx (苹果应用搜索)
 # cn  (切换至中国区)
 # hk  (切换至香港区)
 # tw  (切换至台湾区)
@@ -161,6 +162,8 @@
 #>>>>>>>>>>>>>>>>>>>>>>>苹果商店切换
 #源链接爬虫于>>https://www.liangjianghu.com/searchads-appstore-switch
 #Created by ddgksf2013，使用方法：输入区号，搜索即可
+# ios  xxx (苹果应用搜索)
+^https:\/\/duckduckgo.com\/\?q=ios\+([^&]+).+ url 302 https://www.qimai.cn/search/index/search/$1
 # cn  (切换至中国区)
 ^https:\/\/duckduckgo.com\/\?q=cn&.+ url 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143465&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=cn&urlDesc=
 # hk  (切换至香港区)
