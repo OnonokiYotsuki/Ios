@@ -4,9 +4,7 @@
 # 欢迎提issues或私信bot,贡献应用新的api地址
 # https://t.me/ddgksf2021
 # 更新时间：2022-11-26
-###############################################################
-################################################################
-# ======= 哔哩哔哩 ======= # 
+    bilibili:
 # DOMAIN-SUFFIX,biliapi.net,IP
 # DOMAIN-SUFFIX,biliapi.com,IP 
 # DOMAIN,api.bilibili.com,IP 
