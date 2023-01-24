@@ -1,7 +1,7 @@
 {
-    "name": "Hand Painted Icon",
-    "description": "Desing By Semporia",
-    "time": "2022-08-16",
+    "name": "Yotsuki Self Icon",
+    "description": "Desing By Yotsuki",
+    "time": "2023-01-24",
     "icons": [
         {
             "name": "FishChips",
@@ -10,7 +10,6 @@
         {
             "name": "FishChips",
             "url": "https://raw.githubusercontent.com/OnonokiYotsuki/Ios/main/QuantumultX/icon/other/FishChips.PNG"
-        },
-
+        }
     ]
 }
